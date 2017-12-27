@@ -11,7 +11,7 @@ namespace VirtualPet
         public string name;
         public int age;
         public string type;
-        public bool hasFur;
+        public bool isHungry;
         public bool breathesAir;
 
         public string Name
@@ -23,12 +23,22 @@ namespace VirtualPet
         public string Type
         { get; set; }
 
-        public bool HasFur
+        public bool IsHungry
         { get; set; }
 
         public bool BreathesAir
         { get; set; }
 
+        public Pet ()
+        {
 
+        }
+
+        public Pet (string name, int age, string type)
+        {
+            this.name = name;
+            this.age = age;
+            this.type = type;
+        }
     }
 }
